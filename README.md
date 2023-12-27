@@ -9,6 +9,7 @@ Thank you for exploring this exciting project with me. Frontend Mentor challenge
 - User Interactivity: Users can effortlessly Hide/Show answers by clicking on questions. Additionally, smooth keyboard navigation allows seamless interaction.
 - Responsive Design: The interface dynamically adjusts to provide an optimal layout on various screen sizes, enhancing the user experience.
 - Hover and Focus States: Implemented hover and focus states for all interactive elements, ensuring a polished and intuitive interface.
+
 ## Live Site URL:
 [Visit the Live Site](https://faq-accordion-murex.vercel.app/)
 
