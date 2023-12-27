@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "WorkSans-Bold"; /* Give your font a name */
+  src: url("./assets/fonts/static/WorkSans-Bold.ttf") format("woff"); /* Path to your font file */
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans-Regular"; /* Give your font a name */
+  src: url("./assets/fonts/static/WorkSans-Regular.ttf") format("woff"); /* Path to your font file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans-SemiBold"; /* Give your font a name */
+  src: url("./assets/fonts/static/WorkSans-SemiBold.ttf") format("woff"); /* Path to your font file */
+  font-weight: semi-bold;
+  font-style: normal;
+}
+
+html {
+  background-image: url("./assets/images/background-pattern-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: hsl(275, 100%, 97%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 150px auto;
+  width: 55vh;
+  align-items: left;
+  justify-content: center;
+  background-color: hsl(0, 0%, 100%);
+  padding: 25px;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  html {
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    background-size: auto;
+    padding: 150px 0;
+  }
+  .container {
+    width: 70%; /* Adjusted width for smaller screens */
+    min-width: initial; /* Remove minimum width for smaller screens */
+    margin: 50px auto; /* Adjusted margin for smaller screens */
+    padding: 30px 15px;
+  }
+  .accordion {
+    gap: 30px;
+  }
+}
+
+.elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgb(119, 119, 119);
+  font-family: "WorkSans-SemiBold";
+  font-size: 16px;
+  border-bottom: 1px solid rgba(78, 78, 78, 0.112);
+  margin-top: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.panel {
+  font-family: "WorkSans-Regular";
+  font-size: 14px;
+  background-color: hsl(0, 0%, 100%);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.1s ease-out;
+  margin-bottom: 20px;
+}
+
+.accordion {
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: 1s;
+  outline: none;
+  border: none;
+  color: black;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion::hover {
+  color: black;
+}
+
+.sign::after {
+  content: url("./assets/images/icon-plus.svg");
+  width: 5px;
+  height: auto;
+}
+
+.sign.active::after {
+  content: url("./assets/images/icon-minus.svg");
+  width: 5px;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 35px;
+  font-family: "WorkSans-Bold", sans-serif;
+  margin: 15px 0;
+}
+
+.plus_sign {
+  content: url("./assets/images/icon-star.svg");
+  width: 1.5rem;
+  padding: 10px;
+}
